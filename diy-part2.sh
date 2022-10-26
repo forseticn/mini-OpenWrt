@@ -56,5 +56,8 @@ svn co https://github.com/fw876/helloworld/trunk/xray-plugin package/xray-plugin
 svn co https://github.com/fw876/helloworld/trunk/lua-neturl package/lua-neturl
 svn co https://github.com/fw876/helloworld/trunk/trojan package/trojan
 
+# 修改插件名字
+sed -i 's/"带宽监控"/"监控"/g' `grep "带宽监控" -rl ./`
+
 ./scripts/feeds update -a
 ./scripts/feeds install -a
