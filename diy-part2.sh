@@ -23,7 +23,6 @@ rm -rf feeds/luci/applications/luci-app-netdata
 # 添加额外软件包
 git clone --depth 1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 git clone --depth 1 https://github.com/Jason6111/luci-app-netdata feeds/luci/applications/luci-app-netdata
-git clone --depth 1 https://github.com/sirpdboy/netspeedtest feeds/luci/applications/luci-app-netspeedtest
 
 # 科学上网插件
 git clone --depth 1 https://github.com/jerrykuku/luci-app-vssr package/luci-app-vssr
