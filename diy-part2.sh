@@ -29,8 +29,5 @@ git clone --depth 1 https://github.com/sirpdboy/netspeedtest.git package/netspee
 git clone --depth 1 https://github.com/jerrykuku/luci-app-vssr package/luci-app-vssr
 git clone --depth 1 https://github.com/jerrykuku/lua-maxminddb package/lua-maxminddb
 
-# 修改插件名字
-sed -i 's/"带宽监控"/"监控"/g' `grep "带宽监控" -rl ./`
-
 ./scripts/feeds update -a
 ./scripts/feeds install -a
