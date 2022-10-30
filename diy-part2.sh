@@ -31,5 +31,10 @@ git clone --depth 1 https://github.com/Jason6111/luci-app-netdata feeds/luci/app
 git clone --depth 1 https://github.com/jerrykuku/luci-app-vssr package/luci-app-vssr
 git clone --depth 1 https://github.com/jerrykuku/lua-maxminddb package/lua-maxminddb
 
+# 调整 x86 型号只显示 CPU 型号
+sed -i '/h=${g}.*/d' package/lean/autocore/files/x86/autocore
+sed -i 's/(dmesg.*/{a}${b}${c}${d}${e}${f}/g' package/lean/autocore/files/x86/autocore
+sed -i 's/echo $h/echo $g/g' package/lean/autocore/files/x86/autocore
+
 ./scripts/feeds update -a
 ./scripts/feeds install -a
