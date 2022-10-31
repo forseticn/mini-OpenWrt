@@ -14,9 +14,7 @@
 sed -i 's/192.168.1.1/10.0.0.3/g' package/base-files/files/bin/config_generate
 
 # Clear the login password
-# sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
-sed -i 's/root:1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::/root:$1$jP8fQ/gS$iDJ8kuXeNza10W4bG.Dk90:19291:0:99999:7:::/g' package/lean/default-settings/files/zzz-default-settings
-
+sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
 
 # 移除重复软件包
 rm -rf feeds/luci/themes/luci-theme-argon
